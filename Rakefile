@@ -11,7 +11,7 @@ begin
     gem.homepage = "http://github.com/adriancuadros/seedsv"
     gem.authors = ["Adrian Cuadros"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
-    gem.add_dependency("fastercsv", "~> 1.5.3")
+    gem.add_dependency("fastercsv", "~> 1.5.1")
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
