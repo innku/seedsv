@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{seedsv}
-  s.version = "1.1.0"
+  s.version = "1.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Adrian Cuadros"]
-  s.date = %q{2011-03-11}
+  s.date = %q{2011-03-16}
   s.description = %q{Seed your database with data from csv files with ease}
   s.email = %q{adrian@innku.com}
   s.extra_rdoc_files = [
