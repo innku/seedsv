@@ -25,7 +25,7 @@
 #
 # If something goes wrong and you want to delete everything seeded from csv files:
 #     rake db:seed:cleanup
+require 'seedsv/engine'
 require 'seedsv/csv_seed'
-  Dir[File.join(File.dirname(__FILE__), 'tasks/*.rake')].each{ |task| load task }
 require 'seedsv'
 
