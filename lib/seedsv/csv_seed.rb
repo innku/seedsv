@@ -19,9 +19,10 @@ module Seedsv
     # Also optionally it can receive the +file_name+ to use.
     def seed_model(model_class, options={})
       if model_class.count == 0 or options[:force]
-        table_name = options[:file_name] || model_class.table_name
         puts "Seeding #{model_class.to_s.pluralize}..."
-        csv_file = @@csv_class.open(Rails.root + "db/csv/#{table_name}.csv", :headers => true)
+        file_name = options[:file_name] || "#{model_class.table_name}.csv"
+        file_path = options[:file_path] || 'db/csv'
+        csv_file = @@csv_class.open(File.join(Rails.root, file_path, file_name), :headers => true)
         seed_from_csv(model_class, csv_file)
       end
     end
